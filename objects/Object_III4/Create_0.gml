@@ -1,0 +1,1 @@
+SEventI_RegistryEvent(SE.STEP,id,function(){x++;});
