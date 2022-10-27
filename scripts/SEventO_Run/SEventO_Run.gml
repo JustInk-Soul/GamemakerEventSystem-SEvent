@@ -5,5 +5,7 @@ function SEventO_Run(obj, event){
 	oi.__tmp__ = oe;
 	global.oEventObj = oi;
 	oi.__tmp__();
-	//variable_struct_remove(self,"__tmp__");
+	with(o){
+		variable_struct_remove(self,"__tmp__");
+	}
 }
