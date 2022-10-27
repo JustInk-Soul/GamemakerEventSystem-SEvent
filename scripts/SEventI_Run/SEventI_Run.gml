@@ -11,7 +11,7 @@ function SEventI_Run(SEtype){
 				var o = get(global.iEventBus[BUS.ENTITY],i);
 				if(instance_exists(o)){
 					o.__tmp__ = get(global.iEventBus[BUS.EVENT],i);
-					__tmp__();
+					o.__tmp__();
 					with(o){
 						variable_struct_remove(self,"__tmp__");
 					}
